@@ -31,9 +31,3 @@ npm run dev
 ```
 
 Then open the browser-sync URL (usually `http://localhost:3000`).
-
-
-## Dev server notes
-
-- The app entry is now project-root `index.html`, so `http://localhost:3000/` works directly.
-- `npm run dev` uses `--no-snippet` to avoid BrowserSync inline script injection, which can violate strict CSP policies.
