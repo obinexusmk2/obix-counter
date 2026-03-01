@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBIX Counter Demo</title>
+    <link rel="stylesheet" href="pages/styles.css" />
+  </head>
+  <body>
+    <main class="app" id="app">
+      <h1>OBIX Counter Example</h1>
+      <p class="subtitle">Data model + transition model inspired by obix_docs API examples.</p>
+
+      <section id="counter-container" class="card">
+        <p class="count-row">Count: <span id="count">0</span></p>
+        <p class="count-row">Step: <span id="step-value">1</span></p>
+
+        <label for="step-input">Set step value</label>
+        <input id="step-input" type="number" value="1" min="1" />
+
+        <div class="button-row">
+          <button id="decrement-btn">Decrement</button>
+          <button id="increment-btn">Increment</button>
+          <button id="reset-btn">Reset</button>
+        </div>
+
+        <p id="status" class="status">Transition: none</p>
+      </section>
+    </main>
+
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
